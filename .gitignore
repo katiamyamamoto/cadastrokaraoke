@@ -2,4 +2,4 @@
 /dist/
 *.log
 node_modules/
-.angular/
+/.angular/cache
