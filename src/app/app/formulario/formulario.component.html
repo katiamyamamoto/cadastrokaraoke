@@ -12,16 +12,16 @@
     <form>
         <div class="form">
             <label for="cpf">CPF:</label>
-            <input type="text" name="cpf" id="cpf">
+            <input type="text" [(ngModel)]="cpf" name="cpf" id="cpf">
             <label for="name">Nome Completo:</label>
-            <input type="text" name="name" id="name">
+            <input type="text" [(ngModel)]="name" name="name" id="name">
             <label for="dob">Data de Nascimento:</label>
-            <input type="date" name="dob" id="dob">
+            <input type="date" [(ngModel)]="dob" name="dob" id="dob">
             <label for="phone">Telefone:</label>
-            <input type="text" name="phone" id="phone">
+            <input type="text" [(ngModel)]="phone" name="phone" id="phone">
             <label for="email">E-mail:</label>
-            <input type="email" name="email" id="email">
-            <button>Enviar</button>
+            <input type="email" [(ngModel)]="email" name="email" id="email">
+            <button (click)="Send()">Enviar</button>
         </div>
     </form>
     <footer>
